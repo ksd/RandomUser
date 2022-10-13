@@ -26,6 +26,7 @@ struct User: Decodable, Comparable, Identifiable {
     }
     let name: Name
     let picture: Picture
+    let location: Location
     
     struct Name: Decodable {
         let first: String
@@ -35,5 +36,18 @@ struct User: Decodable, Comparable, Identifiable {
     struct Picture: Decodable {
         let large: String
     }
+    
+    struct Location: Decodable {
+        let coordinates: Coordinate
+    }
+    
+    struct Coordinate: Decodable {
+        let latitude: String
+        let longitude: String
+    }
+    
+    static let demoUser = User(
+        name: Name(first: "Ole", last: "Olsen"),
+        picture: Picture(large: "https://randomuser.me/api/portraits/men/75.jpg"),
+        location: Location(coordinates: Coordinate(latitude: "56.119772138563675", longitude: "10.159000447600846")))
 }
-

@@ -16,12 +16,16 @@ struct ContentView: View {
     }
     
     var body: some View {
-        List(users){ user in
-            HStack(alignment: .top) {
-                ImageView(user: user)
-                Text("\(user.name.first) \(user.name.last)").font(.title3)
+        NavigationView {
+            List(users){ user in
+                NavigationLink(destination: Detail(user: user)) {
+                    HStack(alignment: .top) {
+                        ImageView(user: user)
+                        Text("\(user.name.first) \(user.name.last)").font(.title3)
+                    }
+                    .listRowSeparator(.hidden)
+                }.navigationTitle("Users")
             }
-            .listRowSeparator(.hidden)
         }
     }
 }
@@ -57,7 +61,7 @@ struct LoadingView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static let randomUser = RandomUserViewModel()
-
+    
     static var previews: some View {
         ContentView(randomUserViewModel: randomUser)
     }

@@ -13,6 +13,7 @@
 		44815E6527C794EB0008E050 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44815E6427C794EB0008E050 /* Preview Assets.xcassets */; };
 		44815E6C27C795230008E050 /* randomUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44815E6B27C795230008E050 /* randomUser.swift */; };
 		44815E6F27C795910008E050 /* randomUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44815E6E27C795910008E050 /* randomUserViewModel.swift */; };
+		44E1CA6528F827EA00F8EAA3 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E1CA6428F827EA00F8EAA3 /* Detail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		44815E6427C794EB0008E050 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		44815E6B27C795230008E050 /* randomUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = randomUser.swift; sourceTree = "<group>"; };
 		44815E6E27C795910008E050 /* randomUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = randomUserViewModel.swift; sourceTree = "<group>"; };
+		44E1CA6428F827EA00F8EAA3 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				44815E6D27C795430008E050 /* Model */,
 				44815E5D27C794E90008E050 /* RandomUserApp.swift */,
 				44815E5F27C794E90008E050 /* ContentView.swift */,
+				44E1CA6428F827EA00F8EAA3 /* Detail.swift */,
 				44815E6127C794EB0008E050 /* Assets.xcassets */,
 				44815E6327C794EB0008E050 /* Preview Content */,
 			);
@@ -160,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44815E6F27C795910008E050 /* randomUserViewModel.swift in Sources */,
+				44E1CA6528F827EA00F8EAA3 /* Detail.swift in Sources */,
 				44815E6027C794E90008E050 /* ContentView.swift in Sources */,
 				44815E6C27C795230008E050 /* randomUser.swift in Sources */,
 				44815E5E27C794E90008E050 /* RandomUserApp.swift in Sources */,
